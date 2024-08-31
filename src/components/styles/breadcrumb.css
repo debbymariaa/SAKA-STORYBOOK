@@ -1,0 +1,36 @@
+/* breadcrumb.css */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-link {
+  color: blue;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-label {
+  padding: 0 5px;
+}
+
+.breadcrumb-separator {
+  margin: 0 5px;
+}
