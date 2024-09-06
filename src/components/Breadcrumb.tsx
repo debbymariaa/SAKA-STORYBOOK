@@ -1,12 +1,12 @@
-// Breadcrumb.tsx
 import React from "react";
 import "./styles/breadcrumb.css";
 
 interface BreadcrumbProps {
   items: { label: string; link?: string }[];
+  separator?: string; // Tambahkan prop separator
 }
 
-export const Breadcrumb = ({ items }: BreadcrumbProps) => {
+export const Breadcrumb = ({ items, separator = "/" }: BreadcrumbProps) => {
   return (
     <nav className="breadcrumb">
       <ul>
@@ -20,7 +20,7 @@ export const Breadcrumb = ({ items }: BreadcrumbProps) => {
               <span className="breadcrumb-label">{item.label}</span>
             )}
             {index < items.length - 1 && (
-              <span className="breadcrumb-separator">/</span>
+              <span className="breadcrumb-separator">{separator}</span>
             )}
           </li>
         ))}

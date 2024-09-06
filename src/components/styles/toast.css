@@ -1,27 +1,33 @@
-/* toast.css */
 .toast {
-  display: flex;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
+  border-width: 5px;
+  border-color: #239802;
+  border-radius: 10px;
+  padding: 45px;
+  background-color: #34e204;
+  position: relative;
+  display: inline-block;
 }
 
-.toast-message {
-  flex-grow: 1;
+.toast-message1 {
+  font-size: 24px;
+  font-weight: bold;
+  /* margin: ; */
+  color:rgb(255, 0, 0);
+}
+
+.toast-message2 {
+  font-size: 11px;
+  margin: 0;
 }
 
 .toast-close {
-  background: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
   border: none;
-  color: #fff;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 20px; /* Ukuran font untuk ikon silang */
+  line-height: 1;
+  color: #333; /* Warna ikon silang */
 }

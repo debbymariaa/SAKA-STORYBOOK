@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import "./styles/toast.css";
+import "../components/styles/toast.css";
 
 interface ToastProps {
-  message: string;
-  duration?: number; // Duration in milliseconds
+  message1: string;
+  message2: string;
+  duration?: number;
   onClose?: () => void;
 }
 
-export const Toast = ({ message, duration = 3000, onClose }: ToastProps) => {
+export const Toast = ({ message1, message2, duration = 3000, onClose }: ToastProps) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (onClose) onClose();
@@ -17,7 +18,8 @@ export const Toast = ({ message, duration = 3000, onClose }: ToastProps) => {
 
   return (
     <div className="toast">
-      <span className="toast-message">{message}</span>
+      <h1 className="toast-message1">{message1}</h1>
+      <p className="toast-message2">{message2}</p>
       <button className="toast-close" onClick={onClose}>
         ×
       </button>
