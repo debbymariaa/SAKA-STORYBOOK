@@ -32,6 +32,7 @@ const Page = () => {
         <h1>Breadcrumb dengan Separator "&gt"</h1>
         <Breadcrumb items={breadcrumbItems} separator=">" />
       </div>
+      <br />
       <div>
         {showToast && (
           <Toast
